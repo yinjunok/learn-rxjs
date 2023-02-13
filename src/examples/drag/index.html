@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <style>
+    .avatar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: cornflowerblue;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    #avatar {
+      z-index: 999;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="avatar" class="avatar">1</div>
+  <div id="avatar-1" class="avatar"></div>
+  <div id="avatar-2" class="avatar"></div>
+  <div id="avatar-3" class="avatar"></div>
+  <script type="module" src="/src/examples/drag/main.ts"></script>
+</body>
+
+</html>

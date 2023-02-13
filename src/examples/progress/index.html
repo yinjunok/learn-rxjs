@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <style>
+    canvas {
+      border: 1px solid #FF00FF;
+    }
+    #progress {
+      width: 50%;
+      margin: 0 auto;
+      height: 20px;
+      border-radius: 10px;
+      background-color: #fefefe;
+      border: 1px solid #000;
+    }
+
+    #dot {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: wheat;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="progress">
+    <div id="dot"></div>
+  </div>
+  <script type="module" src="/src/demo/progress/main.ts"></script>
+</body>
+
+</html>

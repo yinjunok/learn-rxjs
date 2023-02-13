@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      #dot {
+        margin-top: 10px;
+        height: 30px;
+        width: 30px;
+        background-color: lightgray;
+        border-radius: 50%;
+        transition: all 0.6s ease-in-out;
+        text-align: center;
+        color: white;
+      }
+
+      #timer {
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        opacity: 0.1;
+        font-size: 60px;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="timer"></div>
+    <div id="dot"></div>
+    <script type="module" src="/src/examples/catch-the-dot-game/main.ts"></script>
+  </body>
+</html>

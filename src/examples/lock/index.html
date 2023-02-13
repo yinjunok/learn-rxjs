@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <style>
+    .grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      margin: 0 auto;
+      flex-flow: row wrap;
+      gap: 8px;
+    }
+
+    .number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-sizing: border-box;
+      width: calc((100% - 16px) / 3);
+      aspect-ratio: 1 / 1;
+      flex: 0 0 calc((100% - 16px) / 3);
+      border-radius: 50%;
+      border: 1px solid #999;
+      transition: all .15s;
+    }
+
+    .number:active {
+      background-color: rgb(45, 156, 100);
+    }
+
+    #input {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="grid" class="grid">
+    <div id="number_1" data-number="1" class="number">1</div>
+    <div id="number_2" data-number="2" class="number">2</div>
+    <div id="number_3" data-number="3" class="number">3</div>
+    <div id="number_4" data-number="4" class="number">4</div>
+    <div id="number_5" data-number="5" class="number">5</div>
+    <div id="number_6" data-number="6" class="number">6</div>
+    <div id="number_7" data-number="7" class="number">7</div>
+    <div id="number_8" data-number="8" class="number">8</div>
+    <div id="number_9" data-number="9" class="number">9</div>
+    <div id="number_0" data-number="0" class="number">0</div>
+  </div>
+  <div id="input"></div>
+  <script type="module" src="/src/lock/lock/main.ts"></script>
+</body>
+
+</html>

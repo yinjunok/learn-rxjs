@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <style>
+    #refresh {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: grey;
+      border-radius: 50%;
+      left: 50%;
+    }
+
+    #point {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: lightgrey;
+      border-radius: 50%;
+      left: 51%;
+      top: 105px;
+    }
+
+    #data {
+      position: absolute;
+      top: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div id='refresh'></div>
+  <div id='point'></div>
+  <div id='data'>Swipe gray dot down to get latest date/time</div>
+  <script type="module" src="/src/examples/swipe-to-refresh/fresh.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  
+  <style>
+    body {
+      height: 100vh;
+    }
+
+    .mole {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      cursor: pointer;
+      background-color: rgba(24, 128, 24, .3);
+    }
+
+    .countDown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: -1;
+      font-size: 24px;
+      color: cornflowerblue;
+    }
+
+    .score {
+      position: absolute;
+      top: 68px;
+      font-size: 24px;
+      right: 20px;
+      z-index: -1;
+      color: darkgoldenrod;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="countDown" class="countDown"></div>
+  <div id="score" class="score"></div>
+  <script type="module" src="/src/examples/whack-a-mole/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <style>
+    canvas {
+      border: 1px solid #FF00FF;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas width="400px" height="300px" id="game"></canvas>
+  <div id="fps"></div>
+  <p class="instructions">
+    Each time a block hits a wall, it gets faster. You can hit SPACE to pause the boxes. They will change colors to show
+    they are paused.
+  </p>
+  <script type="module" src="/src/examples/game-loop/main.ts"></script>
+</body>
+
+</html>

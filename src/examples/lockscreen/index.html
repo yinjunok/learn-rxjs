@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <style>
+    .grid {
+      border-spacing: 2px;
+    }
+
+    .cell {
+      width: 50px;
+      height: 50px;
+      background: grey;
+      display: table-cell;
+      border-radius: 50%;
+      transform: scale(0.5);
+      text-align: center;
+      vertical-align: middle;
+      color: white;
+    }
+
+    .pulse div {
+      animation-name: pulse;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    #result {
+      height: 20px;
+    }
+
+    body {
+      font-size: 12px;
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(0.99);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  Expected Password:
+  <input id="expectedPassword" value="1252" />
+  <hr />
+  Password:
+  <div class="grid pulse">
+    <div>
+      <div class="cell" id="c1">1</div>
+      <div class="cell" id="c2">2</div>
+      <div class="cell" id="c3">3</div>
+    </div>
+    <div>
+      <div class="cell" id="c4">4</div>
+      <div class="cell" id="c5">5</div>
+      <div class="cell" id="c6">6</div>
+    </div>
+    <div>
+      <div class="cell" id="c7">7</div>
+      <div class="cell" id="c8">8</div>
+      <div class="cell" id="c9">9</div>
+    </div>
+  </div>
+
+  <div id="result"></div>
+
+  <hr />
+  <ul>
+    <li>Use mouse to 'swipe' across the lock pad (hold mouse button and swipe :) ).
+    </li>
+    <li> Pad will turn green if password is correct or red if password is incorrect.
+    </li>
+    <li> You can set password to whatever sequence you like.</li>
+  </ul>
+  <hr />
+  <script type="module" src="/src/examples/lockscreen/main.ts"></script>
+</body>
+
+</html>
