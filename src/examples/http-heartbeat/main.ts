@@ -49,7 +49,6 @@ const heartbeat$ = ajax<HeartbeatResponse>('/api/heatbeat').pipe(
   })
 );
 
-let infoErrorCount = 0
 const info$ = ajax<InfoResponse>({
   url: '/api/info',
   method: 'POST'
@@ -60,11 +59,6 @@ const info$ = ajax<InfoResponse>({
     }
 
     return throwError(() => new Error())
-  }),
-  tap({
-    error() {
-      infoErrorCount += 1
-    },
   }),
   retry({
     delay: (_, retryCount) => {
